@@ -1,0 +1,22 @@
+{
+  "name": "Reverglim",
+  "short_name": "Reverglim",
+  "description": "La Red Social POST-SCROLL",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#E8001C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

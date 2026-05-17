@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════════════════════
+   REVERGLIM — Policy Page Styles
+   ═══════════════════════════════════════════════════════════ */
+
+.page {
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
+.backNav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 20px 40px;
+  background: rgba(8, 8, 8, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(232, 0, 28, 0.12);
+}
+
+.backLink {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.backLink:hover { color: var(--red); }
+
+.content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.header {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(232, 0, 28, 0.2);
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.updated {
+  font-size: 0.82rem;
+  color: var(--white-mute);
+  letter-spacing: 0.05em;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.article section h2 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 14px;
+}
+
+.article section p {
+  font-size: 1rem;
+  color: var(--white-dim);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.article section p strong { color: var(--white); }
+
+.article section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.article section ul li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--white-dim);
+  line-height: 1.7;
+}
+.article section ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-size: 0.8rem;
+}
+
+.article section a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .backNav { padding: 16px 20px; }
+  .content { padding: 40px 20px; }
+}

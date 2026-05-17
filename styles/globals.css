@@ -1,0 +1,136 @@
+/* ═══════════════════════════════════════════════════════════
+   REVERGLIM — Global Styles
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --red:        #E8001C;
+  --red-dark:   #A80014;
+  --red-glow:   rgba(232, 0, 28, 0.35);
+  --black:      #080808;
+  --black-soft: #111111;
+  --white:      #F2EDE8;
+  --white-dim:  rgba(242, 237, 232, 0.72);
+  --white-mute: rgba(242, 237, 232, 0.38);
+  --overlay:    rgba(6, 4, 4, 0.62);
+
+  --font-display: 'Anton', 'Bebas Neue', sans-serif;
+  --font-heading: 'Bebas Neue', 'Anton', sans-serif;
+  --font-body:    'Rajdhani', sans-serif;
+
+  --transition-speed: 0.85s;
+  --transition-ease:  cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* ─── Reset ──────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: auto;
+  overflow: auto;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  overflow: auto;
+  width: 100vw;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: auto;
+}
+
+/* ─── Custom Cursor ──────────────────────────────────────── */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease, width 0.2s ease, height 0.2s ease;
+  mix-blend-mode: difference;
+}
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(232, 0, 28, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.22s ease, width 0.25s ease, height 0.25s ease, opacity 0.25s ease;
+}
+.cursor.hover { width: 20px; height: 20px; }
+.cursor-follower.hover { width: 60px; height: 60px; opacity: 0.4; }
+
+/* ─── Scrollbar oculto ──────────────────────────────────── */
+::-webkit-scrollbar { display: none; }
+* { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Typography base ───────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+button {
+  cursor: none;
+  font-family: var(--font-body);
+}
+
+img { display: block; }
+
+/* ─── Noise Texture Overlay ────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Selection ─────────────────────────────────────────── */
+::selection {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* ─── Focus ─────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+/* ─── Responsive base ───────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  .cursor, .cursor-follower { display: none; }
+}
