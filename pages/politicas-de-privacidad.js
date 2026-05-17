@@ -94,7 +94,7 @@ export default function PoliticasDePrivacidad() {
               <h2>7. Contacto</h2>
               <p>
                 Para cualquier consulta sobre privacidad, contáctanos en{' '}
-                <a href="mailto:privacidad@reverglim.com">privacidad@reverglim.com</a>.
+                <a href="mailto:jg2777613@gmail.com">jg2777613@gmail.com</a>.
               </p>
             </section>
           </article>
