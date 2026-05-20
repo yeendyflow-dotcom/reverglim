@@ -1,7 +1,7 @@
 // pages/sitemap.xml.js
 // Genera el sitemap dinámicamente para SEO
-
-const SITE_URL = 'https://reverglim.com';
+google-site-verification=caJjXstv4J7COwx0jIKa3fZK_DNSuzFDH99pU-9cj7s
+const SITE_URL = 'https://reverglim.vercel.app';
 
 function generateSiteMap() {
   const pages = [
