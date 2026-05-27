@@ -43,6 +43,9 @@ export default function Document() {
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://reverglim.com" />
 
+        {/* ─── Google Search Console Verification ───── */}
+        <meta name="google-site-verification" content="p8H6581oS9OPAdDW2TxvmLxPZjRGlwKER46j2eATgQc" />
+
         {/* ─── Open Graph / Facebook ──────────────────── */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reverglim.com" />
