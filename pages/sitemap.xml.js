@@ -1,6 +1,6 @@
 // pages/sitemap.xml.js
 // Genera el sitemap dinámicamente para SEO
-google-site-verification=caJjXstv4J7COwx0jIKa3fZK_DNSuzFDH99pU-9cj7s
+// google-site-verification=caJjXstv4J7COwx0jIKa3fZK_DNSuzFDH99pU-9cj7s
 const SITE_URL = 'https://reverglim.vercel.app';
 
 function generateSiteMap() {
