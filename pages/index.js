@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import styles from '../styles/Home.module.css';
-google-site-verification=caJjXstv4J7COwx0jIKa3fZK_DNSuzFDH99pU-9cj7s
+// google-site-verification=caJjXstv4J7COwx0jIKa3fZK_DNSuzFDH99pU-9cj7s
 /* ─────────────────────────────────────────────────────────
    Secciones de Reverglim
 ───────────────────────────────────────────────────────── */
