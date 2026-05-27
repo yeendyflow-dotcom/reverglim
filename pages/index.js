@@ -121,6 +121,7 @@ export default function Home() {
       <Head>
         <title>Reverglim — La Red Social POST-SCROLL</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="google-site-verification" content="p8H6581oS9OPAdDW2TxvmLxPZjRGlwKER46j2eATgQc" />
       </Head>
 
       {/* ── Custom Cursor ─────────────────────────────── */}
