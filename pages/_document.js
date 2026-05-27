@@ -28,6 +28,7 @@ export default function Document() {
       <Head>
         {/* ─── Charset & Viewport ─────────────────────── */}
         <meta charSet="UTF-8" />
+        <meta name="google-site-verification" content="p8H6581oS9OPAdDW2TxvmLxPZjRGlwKER46j2eATgQc" />
 
         {/* ─── SEO Primary ────────────────────────────── */}
         <meta
