@@ -316,16 +316,13 @@ export default function Home() {
           <div className="footer__col">
             <h4>Enlaces rápidos</h4>
             <ul>
-              <li>
-                <a href="/term">Términos y condiciones</a>
-              </li>
-              <li>
-
-                <a href="/privacidad">Política y privacidad</a>
-              </li>
-              <li>
-                <a href="/seguridad-infantil">Seguridad infantil</a>
-              </li>
+              <li><a href="/term">Términos y condiciones</a></li>
+              <li><a href="/privacidad">Política y privacidad</a></li>
+              <li><a href="/seguridad-infantil">Seguridad infantil</a></li>
+              <li><a href="/que-es-reverglim">¿Qué es Reverglim?</a></li>
+              <li><a href="/alternativa-tiktok">Reverglim vs. TikTok</a></li>
+              <li><a href="/alternativa-instagram">Reverglim vs. Instagram</a></li>
+              <li><a href="/mejor-red-social-2025">Mejor red social 2025</a></li>
             </ul>
           </div>
         </footer>

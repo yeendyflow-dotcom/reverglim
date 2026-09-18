@@ -3,6 +3,12 @@ const SITE_URL = 'https://reverglim.com';
 const pages = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },
   { path: '/que-es-reverglim', priority: '0.9', changefreq: 'monthly' },
+  { path: '/alternativa-tiktok', priority: '0.9', changefreq: 'monthly' },
+  { path: '/alternativa-instagram', priority: '0.9', changefreq: 'monthly' },
+  { path: '/red-social-segura-menores', priority: '0.8', changefreq: 'monthly' },
+  { path: '/red-social-sin-publicidad', priority: '0.8', changefreq: 'monthly' },
+  { path: '/mejor-red-social-2025', priority: '0.8', changefreq: 'monthly' },
+  { path: '/seguridad-infantil', priority: '0.7', changefreq: 'monthly' },
   { path: '/privacidad', priority: '0.5', changefreq: 'yearly' },
   { path: '/term', priority: '0.5', changefreq: 'yearly' },
 ];
