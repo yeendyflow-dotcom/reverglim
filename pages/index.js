@@ -324,7 +324,7 @@ export default function Home() {
                 <a href="/privacidad">Política y privacidad</a>
               </li>
               <li>
-                <a href="#">Seguridad infantil</a>
+                <a href="/seguridad-infantil">Seguridad infantil</a>
               </li>
             </ul>
           </div>
