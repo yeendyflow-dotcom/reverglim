@@ -1,167 +1,83 @@
-# 🔴 REVERGLIM — Red Social POST-SCROLL
+# Reverglim — Web (Next.js)
 
-Sitio web oficial de Reverglim desarrollado con **Next.js 14** + **CSS Modules**, listo para despliegue en **Vercel**.
+Landing page de Reverglim construida con **Next.js** (Pages Router) sobre **Node.js**,
+con toda la lógica en **JSX/React** (hooks `useState`, `useEffect`, `useRef`) y estilos
+en **CSS puro**.
 
----
-
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
-reverglim/
-├── pages/
-│   ├── _app.js                    # App wrapper global
-│   ├── _document.js               # HTML base + SEO meta tags + JSON-LD
-│   ├── index.js                   # Página principal (POST-SCROLL)
-│   ├── politicas-de-privacidad.js # Política de privacidad
-│   └── sitemap.xml.js             # Sitemap dinámico para Google
-├── styles/
-│   ├── globals.css                # Variables CSS, reset, cursor
-│   ├── Home.module.css            # Estilos página principal
-│   └── Policy.module.css          # Estilos página de políticas
-├── public/
-│   ├── images/
-│   │   ├── bg.jpg                 # ⚠️ REEMPLAZAR con tu imagen de fondo
-│   │   ├── logo.jpg               # ⚠️ REEMPLAZAR con tu logo
-│   │   └── og-image.jpg           # ⚠️ REEMPLAZAR imagen Open Graph (1200×630)
-│   ├── robots.txt                 # Configuración para bots SEO
-│   └── site.webmanifest           # Manifiesto PWA
-├── package.json
-└── next.config.js
+reverglim-web/
+├─ pages/
+│  ├─ _app.js        → Importa styles/globals.css para toda la app
+│  └─ index.js        → Toda la interfaz: Hero, Presentación, Beneficios y Footer
+├─ styles/
+│  └─ globals.css     → Todos los estilos del sitio
+├─ public/
+│  ├─ images/          → Aquí van logo.jpg, la imagen de presentación, etc.
+│  └─ videos/          → Aquí van el video de fondo del Hero y el video vertical
+├─ package.json
+└─ next.config.js
 ```
 
----
+## Cómo correrlo localmente
 
-## 🖼️ Imágenes requeridas
-
-Coloca estas imágenes en `/public/images/`:
-
-| Archivo       | Descripción                                  | Tamaño recomendado |
-|---------------|----------------------------------------------|-------------------|
-| `bg.jpg`      | Imagen de fondo del hero                     | 1920×1080px       |
-| `logo.jpg`    | Logo Reverglim (la X roja)                   | 200×200px         |
-| `og-image.jpg`| Imagen para redes sociales (Open Graph)      | 1200×630px        |
-
----
-
-## 🚀 Instalación y desarrollo local
+Necesitas tener Node.js instalado (v18 o superior recomendado).
 
 ```bash
-# 1. Instalar dependencias
 npm install
-
-# 2. Ejecutar en modo desarrollo
 npm run dev
-
-# 3. Abrir en el navegador
-# http://localhost:3000
 ```
 
----
+Luego abre http://localhost:3000 en tu navegador.
 
-## ☁️ Despliegue en Vercel
+Para generar la versión de producción:
 
-### Opción 1: Vercel CLI (recomendado)
 ```bash
-# Instalar Vercel CLI
-npm install -g vercel
-
-# Desplegar
-vercel
-
-# Desplegar a producción
-vercel --prod
+npm run build
+npm run start
 ```
 
-### Opción 2: GitHub + Vercel Dashboard
-1. Sube el proyecto a un repositorio de GitHub
-2. Ve a [vercel.com](https://vercel.com) → "Add New Project"
-3. Importa tu repositorio
-4. Vercel detecta automáticamente Next.js
-5. Haz clic en "Deploy"
+## Dónde colocar tus archivos multimedia
 
-### Variables de entorno (opcional)
-Si agregas formulario de contacto con Resend/SendGrid, añade en Vercel Dashboard:
-```
-RESEND_API_KEY=tu_api_key
-```
+El diseño referencia 4 imágenes y 2 videos que **debes agregar tú** (no venían adjuntos
+en la conversación, solo la captura de referencia del diseño):
 
----
+| Archivo esperado                          | Carpeta            | Dónde se usa                                   |
+|--------------------------------------------|---------------------|------------------------------------------------|
+| `logo.jpg`                                 | `public/images/`    | Logo en el navbar (arriba a la izquierda)      |
+| `hero-poster.jpg` *(opcional)*             | `public/images/`    | Imagen de carga del video del Hero             |
+| `reverglim-presentation.jpg`               | `public/images/`    | Imagen de la sección "Nosotros"                |
+| `vertical-poster.jpg` *(opcional)*         | `public/images/`    | Imagen de carga del video vertical              |
+| `hero-background.mp4`                      | `public/videos/`    | Video de fondo del Hero (loop, sin sonido)      |
+| `vertical-showcase.mp4`                    | `public/videos/`    | Video vertical de la sección Beneficios (loop)  |
 
-## 🔍 SEO — Optimizaciones incluidas
+Cada carpeta trae un archivo `.md` con estas mismas instrucciones. Si prefieres usar
+enlaces externos para los videos en vez de guardarlos en `public/videos`, simplemente
+reemplaza el `src` de las etiquetas `<source>` en `pages/index.js` por la URL completa.
 
-- ✅ Meta tags completos (title, description, keywords)
-- ✅ Open Graph para Facebook/LinkedIn/WhatsApp
-- ✅ Twitter Cards
-- ✅ JSON-LD (Schema.org — WebSite)
-- ✅ Sitemap dinámico (`/sitemap.xml`)
-- ✅ `robots.txt` con referencia al sitemap
-- ✅ Canonical URLs
-- ✅ `robots: index, follow`
-- ✅ `theme-color` para navegadores móviles
-- ✅ `apple-touch-icon` y favicons
-- ✅ `site.webmanifest` (PWA)
-- ✅ HTML semántico (nav, main, section, article, header, footer)
-- ✅ ARIA labels para accesibilidad
-- ✅ `lang="es"` en el HTML
+## Notas de implementación
 
-### Para mejorar aún más el SEO:
-1. Registra el sitio en [Google Search Console](https://search.google.com/search-console)
-2. Envía el sitemap: `https://reverglim.com/sitemap.xml`
-3. Configura Google Analytics o Plausible para tracking
-4. Agrega reseñas/testimonios con Schema.org `Review`
-
----
-
-## 🎮 Mecánica POST-SCROLL
-
-La navegación entre secciones funciona mediante:
-
-| Acción | Efecto |
-|--------|--------|
-| Scroll ↓ (rueda del mouse) | Siguiente sección |
-| Scroll ↑ (rueda del mouse) | Sección anterior |
-| Swipe ↑ (touch/móvil) | Siguiente sección |
-| Swipe ↓ (touch/móvil) | Sección anterior |
-| Tecla ↓ / PageDown | Siguiente sección |
-| Tecla ↑ / PageUp | Sección anterior |
-| Click en dot (barra lateral) | Ir a sección específica |
-| Click en nav link | Ir a sección específica |
-
----
-
-## 🎨 Sistema de diseño
-
-```css
-/* Colores */
---red:        #E8001C   /* Rojo marca */
---black:      #080808   /* Negro base */
---white:      #F2EDE8   /* Blanco cálido */
-
-/* Tipografía */
---font-display: 'Anton'      /* Títulos grandes */
---font-heading: 'Bebas Neue' /* Subtítulos */
---font-body:    'Rajdhani'   /* Texto body */
-```
-
----
-
-## 📱 Responsive
-
-- ✅ Desktop (1200px+)
-- ✅ Tablet (768px – 1199px)
-- ✅ Móvil (< 768px) — menú hamburguesa + swipe navigation
-
----
-
-## 🛠️ Tecnologías
-
-- **Next.js 14** — Framework React con SSR/SSG
-- **CSS Modules** — Estilos scoped sin dependencias
-- **Google Fonts** — Anton + Bebas Neue + Rajdhani
-- **Vercel** — Hosting y CDN global
-
----
-
-*Reverglim © 2024 — Todos los derechos reservados*
-"# reverglim" 
-"# reverglim" 
+- **Hero**: video de fondo en loop (`autoPlay`, `muted`, `loop`, `playsInline` — requisitos
+  para que los navegadores permitan el autoplay), con overlay oscuro para que el texto
+  sea legible, navbar que se vuelve sólida al hacer scroll (`useEffect` + `useState`).
+- **Menú móvil**: los 9 enlaces de navegación colapsan en un botón hamburguesa por debajo
+  de 860px de ancho (`useState` controla si está abierto).
+- **Sección "Nosotros"**: imagen a la izquierda + una "píldora" con el texto REVERGLIM y
+  el texto de presentación a la derecha.
+- **Beneficios**: lista numerada de los 7 beneficios + video vertical en loop al costado.
+- **Footer**: tarjeta oscura con bordes redondeados y sombra pronunciada para lograr el
+  efecto "flotante", con las 3 columnas de información (Reverglim, Contacto, Enlaces
+  rápidos) y el copyright debajo.
+- **Animaciones de entrada**: un `IntersectionObserver` (dentro de `useEffect`, guardado
+  con `useRef`) agrega una clase `is-visible` cuando cada bloque entra en pantalla,
+  guiado por estado de React (no se manipula el DOM directamente) para evitar conflictos
+  con los re-renders.
+- Los enlaces de navegación **MISIÓN, VISIÓN, STICKERS, INVERTIR, ANUNCIARME y EMPRESA**
+  quedaron como anclas `#` (placeholders), ya que el diseño compartido no incluía el
+  contenido de esas secciones/páginas. Puedes crearlas como nuevas rutas de Next.js
+  (por ejemplo `pages/mision.js`) y actualizar su `href` en `NAV_LINKS` dentro de
+  `pages/index.js`.
+- Los badges de "Google Play" / "Apple Store" son componentes propios (no las imágenes
+  oficiales). Te recomiendo sustituirlos por los badges oficiales de cada tienda
+  siguiendo sus lineamientos de marca antes de publicar el sitio.

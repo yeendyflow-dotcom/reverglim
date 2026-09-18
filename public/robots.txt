@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Bloquear archivos internos de Next.js
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap
 Sitemap: https://reverglim.com/sitemap.xml
