@@ -54,11 +54,20 @@ const articleSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/red-social-sin-publicidad` },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Red social sin publicidad', item: `${SITE_URL}/red-social-sin-publicidad` },
+  ],
+};
+
 export default function RedSocialSinPublicidad() {
   return (
     <>
       <Head>
-        <title>Red social sin publicidad 2025: Reverglim, privacidad por diseño</title>
+        <title>Red social sin publicidad 2026: Reverglim, privacidad por diseño</title>
         <meta
           name="description"
           content="¿Buscas una red social sin publicidad que no venda tus datos? Reverglim: privacidad por diseño, sin perfiles publicitarios, sin venta de información personal. La red social privada."
@@ -70,7 +79,7 @@ export default function RedSocialSinPublicidad() {
         <link rel="canonical" href={`${SITE_URL}/red-social-sin-publicidad`} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`${SITE_URL}/red-social-sin-publicidad`} />
-        <meta property="og:title" content="Red social sin publicidad 2025: Reverglim, privacidad por diseño" />
+        <meta property="og:title" content="Red social sin publicidad 2026: Reverglim, privacidad por diseño" />
         <meta property="og:description" content="Reverglim no vende tus datos ni usa tu información para publicidad. Privacidad real en redes sociales." />
         <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -79,6 +88,7 @@ export default function RedSocialSinPublicidad() {
         <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div className="seo-page">

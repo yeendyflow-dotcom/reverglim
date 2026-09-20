@@ -45,7 +45,7 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'La mejor alternativa a Instagram en 2025: Reverglim, la red social POST-SCROLL',
+  headline: 'La mejor alternativa a Instagram en 2026: Reverglim, la red social POST-SCROLL',
   description: 'Descubre por qué Reverglim es la mejor alternativa a Instagram: sin algoritmo que entierre tu contenido, sin venta de datos y con interacciones más humanas.',
   url: `${SITE_URL}/alternativa-instagram`,
   inLanguage: 'es',
@@ -54,31 +54,41 @@ const articleSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/alternativa-instagram` },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Alternativa a Instagram', item: `${SITE_URL}/alternativa-instagram` },
+  ],
+};
+
 export default function AlternativaInstagram() {
   return (
     <>
       <Head>
-        <title>Alternativa a Instagram 2025: Reverglim, la red social sin algoritmo opresor</title>
+        <title>Alternativa a Instagram 2026: Reverglim, la red social sin algoritmo opresor</title>
         <meta
           name="description"
           content="¿Buscas una alternativa a Instagram? Reverglim es la red social POST-SCROLL: sin algoritmo que entierre tu contenido, sin venta de datos y con interacciones más humanas. Descúbrela."
         />
         <meta
           name="keywords"
-          content="alternativa instagram, alternativa a instagram, red social sin algoritmo, mejor alternativa instagram 2025, red social diferente a instagram, nueva red social, reverglim, red social post-scroll, red social sin publicidad, red social privada, red social para creadores"
+          content="alternativa instagram, alternativa a instagram, red social sin algoritmo, mejor alternativa instagram 2026, red social diferente a instagram, nueva red social, reverglim, red social post-scroll, red social sin publicidad, red social privada, red social para creadores"
         />
         <link rel="canonical" href={`${SITE_URL}/alternativa-instagram`} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`${SITE_URL}/alternativa-instagram`} />
-        <meta property="og:title" content="Alternativa a Instagram 2025: Reverglim, la red social sin algoritmo opresor" />
+        <meta property="og:title" content="Alternativa a Instagram 2026: Reverglim, la red social sin algoritmo opresor" />
         <meta property="og:description" content="Reverglim es la mejor alternativa a Instagram: sin algoritmo que entierre tu contenido, sin venta de datos y con interacciones más humanas." />
         <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Alternativa a Instagram 2025: Reverglim" />
+        <meta name="twitter:title" content="Alternativa a Instagram 2026: Reverglim" />
         <meta name="twitter:description" content="Reverglim es la red social POST-SCROLL: la mejor alternativa a Instagram sin algoritmo opresor." />
         <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div className="seo-page">
@@ -88,9 +98,9 @@ export default function AlternativaInstagram() {
 
         <main className="seo-main container">
           <header className="seo-header">
-            <span className="seo-label">Alternativa a Instagram · Red social · 2025</span>
+            <span className="seo-label">Alternativa a Instagram · Red social · 2026</span>
             <h1 className="seo-title">
-              La mejor <span className="text-red">alternativa a Instagram</span> en 2025:<br />
+              La mejor <span className="text-red">alternativa a Instagram</span> en 2026:<br />
               Reverglim, la red social POST-SCROLL
             </h1>
             <p className="seo-lead">
@@ -104,7 +114,7 @@ export default function AlternativaInstagram() {
           <div className="seo-body">
 
             <section className="seo-section">
-              <h2>¿Por qué buscar una alternativa a Instagram en 2025?</h2>
+              <h2>¿Por qué buscar una alternativa a Instagram en 2026?</h2>
               <p>
                 Instagram fue lanzado en 2010 como una app simple para compartir fotos.
                 Hoy, después de ser adquirido por Meta (entonces Facebook) en 2012, es
@@ -258,7 +268,7 @@ export default function AlternativaInstagram() {
           <div className="container">
             <p>© {new Date().getFullYear()} Reverglim — La red social POST-SCROLL</p>
             <nav>
-              <Link href="/">Inicio</Link>
+              <Link href="/">Reverglim — Red social POST-SCROLL</Link>
               <Link href="/alternativa-tiktok">vs. TikTok</Link>
               <Link href="/que-es-reverglim">¿Qué es Reverglim?</Link>
               <Link href="/privacidad">Privacidad</Link>

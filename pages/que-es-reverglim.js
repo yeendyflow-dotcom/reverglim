@@ -63,6 +63,15 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: '¿Qué es Reverglim?', item: `${SITE_URL}/que-es-reverglim` },
+  ],
+};
+
 export default function QueEsReverglim() {
   return (
     <>
@@ -105,6 +114,10 @@ export default function QueEsReverglim() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
 
@@ -480,7 +493,7 @@ export default function QueEsReverglim() {
           <div className="container">
             <p>© {new Date().getFullYear()} Reverglim — La red social POST-SCROLL</p>
             <nav>
-              <Link href="/">Inicio</Link>
+              <Link href="/">Reverglim — Red social POST-SCROLL</Link>
               <Link href="/term">Términos</Link>
               <Link href="/privacidad">Privacidad</Link>
             </nav>

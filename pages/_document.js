@@ -90,59 +90,9 @@ export default function Document() {
         {/* ── Google Search Console verification ── */}
         <meta name="google-site-verification" content="e6758bfc9ff45603" />
 
-        {/* ── SEO principal ── */}
-        <meta
-          name="description"
-          content="Reverglim es la red social POST-SCROLL: el contenido exclusivo se destaca, el scroll infinito termina y la interacción es más humana. Descubre la nueva era de las redes sociales."
-        />
-        <meta
-          name="keywords"
-          content="reverglim, reverglim app, red social, redes sociales, red social post-scroll, nueva red social, red social diferente, red social sin scroll infinito, red social exclusiva, red social segura, red social innovadora, contenido exclusivo, bienestar digital, alternativa instagram, alternativa tiktok, rglim, reverglim red social"
-        />
-        <meta name="author" content="Reverglim" />
-        <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
-        <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href={SITE_URL} />
-
-        {/* ── Open Graph ── */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={SITE_URL} />
-        <meta
-          property="og:title"
-          content="Reverglim — La red social POST-SCROLL donde el contenido exclusivo destaca"
-        />
-        <meta
-          property="og:description"
-          content="Reverglim es la red social POST-SCROLL: el contenido exclusivo se destaca, el scroll infinito termina y la interacción es más humana. Únete a la nueva era social."
-        />
-        <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Reverglim — La red social POST-SCROLL" />
-        <meta property="og:site_name" content="Reverglim" />
-        <meta property="og:locale" content="es_ES" />
-
-        {/* ── Twitter Card ── */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@reverglim" />
-        <meta
-          name="twitter:title"
-          content="Reverglim — La red social POST-SCROLL donde el contenido exclusivo destaca"
-        />
-        <meta
-          name="twitter:description"
-          content="Reverglim es la red social POST-SCROLL: el contenido exclusivo se destaca y el scroll infinito termina."
-        />
-        <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
-
-        {/* ── Favicon ── */}
-        <link
-          rel="icon"
-          href="https://ik.imagekit.io/yfitk2mna/Orange_and_Black_Illustrative_Engineering_Services_Logo_Design___5_-removebg-preview.png?updatedAt=1778986456032"
-        />
+        {/* ── Favicon / PWA icons ── */}
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#E8112C" />
 
         {/* ── Fonts ── */}

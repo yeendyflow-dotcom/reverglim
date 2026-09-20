@@ -54,23 +54,32 @@ const articleSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/red-social-segura-menores` },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Red social segura para menores', item: `${SITE_URL}/red-social-segura-menores` },
+  ],
+};
+
 export default function RedSocialSeguraMenores() {
   return (
     <>
       <Head>
-        <title>Red social segura para menores 2025: Reverglim, protección por diseño</title>
+        <title>Red social segura para menores 2026: Reverglim, protección por diseño</title>
         <meta
           name="description"
           content="¿Buscas una red social segura para menores? Reverglim: chat bloqueado por defecto, reportes colectivos automáticos y contenido saludable por política. Protección real para los más jóvenes."
         />
         <meta
           name="keywords"
-          content="red social segura para menores, red social para niños, red social segura, red social infantil, red social sin peligros, reverglim seguridad, protección menores redes sociales, red social para adolescentes, redes sociales seguras 2025, seguridad infantil redes sociales"
+          content="red social segura para menores, red social para niños, red social segura, red social infantil, red social sin peligros, reverglim seguridad, protección menores redes sociales, red social para adolescentes, redes sociales seguras 2026, seguridad infantil redes sociales"
         />
         <link rel="canonical" href={`${SITE_URL}/red-social-segura-menores`} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`${SITE_URL}/red-social-segura-menores`} />
-        <meta property="og:title" content="Red social segura para menores 2025: Reverglim, protección por diseño" />
+        <meta property="og:title" content="Red social segura para menores 2026: Reverglim, protección por diseño" />
         <meta property="og:description" content="Reverglim es la red social más segura para menores: chat bloqueado por defecto, reportes automáticos y contenido saludable." />
         <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -79,6 +88,7 @@ export default function RedSocialSeguraMenores() {
         <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div className="seo-page">
@@ -95,7 +105,7 @@ export default function RedSocialSeguraMenores() {
             </h1>
             <p className="seo-lead">
               La seguridad de los menores en redes sociales es una de las preocupaciones
-              más importantes de padres y educadores en 2025. Reverglim es la primera
+              más importantes de padres y educadores en 2026. Reverglim es la primera
               red social diseñada con la protección de los más jóvenes como principio
               fundacional, no como una configuración opcional.
             </p>
@@ -238,7 +248,7 @@ export default function RedSocialSeguraMenores() {
           <div className="container">
             <p>© {new Date().getFullYear()} Reverglim — La red social POST-SCROLL</p>
             <nav>
-              <Link href="/">Inicio</Link>
+              <Link href="/">Reverglim — Red social POST-SCROLL</Link>
               <Link href="/seguridad-infantil">Seguridad infantil</Link>
               <Link href="/alternativa-tiktok">vs. TikTok</Link>
               <Link href="/privacidad">Privacidad</Link>

@@ -9,15 +9,15 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: '¿Cuál es la mejor red social en 2025?',
+      name: '¿Cuál es la mejor red social en 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Reverglim es la red social más innovadora de 2025: la primera plataforma POST-SCROLL que elimina el scroll infinito, protege la privacidad del usuario, ofrece contenido saludable y tiene seguridad por diseño.',
+        text: 'Reverglim es la red social más innovadora de 2026: la primera plataforma POST-SCROLL que elimina el scroll infinito, protege la privacidad del usuario, ofrece contenido saludable y tiene seguridad por diseño.',
       },
     },
     {
       '@type': 'Question',
-      name: '¿Qué red social está creciendo más en 2025?',
+      name: '¿Qué red social está creciendo más en 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Reverglim es la nueva red social que está captando la atención de usuarios que buscan una alternativa real a TikTok, Instagram y Facebook: una plataforma POST-SCROLL con contenido saludable, privacidad real y seguridad avanzada.',
@@ -25,10 +25,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: '¿Cuál es la red social más segura en 2025?',
+      name: '¿Cuál es la red social más segura en 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Reverglim es la red social más segura de 2025: chat bloqueado por defecto hasta que ambos usuarios se sigan mutuamente, reportes colectivos con bloqueo automático, política de contenido saludable y protección especial para menores de edad.',
+        text: 'Reverglim es la red social más segura de 2026: chat bloqueado por defecto hasta que ambos usuarios se sigan mutuamente, reportes colectivos con bloqueo automático, política de contenido saludable y protección especial para menores de edad.',
       },
     },
     {
@@ -45,13 +45,22 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'La mejor red social de 2025: Reverglim, la plataforma POST-SCROLL que está cambiando todo',
-  description: 'Descubre por qué Reverglim es la mejor red social de 2025: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad por diseño.',
-  url: `${SITE_URL}/mejor-red-social-2025`,
+  headline: 'La mejor red social de 2026: Reverglim, la plataforma POST-SCROLL que está cambiando todo',
+  description: 'Descubre por qué Reverglim es la mejor red social de 2026: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad por diseño.',
+  url: `${SITE_URL}/mejor-red-social-2026`,
   inLanguage: 'es',
   author: { '@type': 'Organization', name: 'Reverglim', url: SITE_URL },
   publisher: { '@type': 'Organization', name: 'Reverglim', url: SITE_URL },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/mejor-red-social-2025` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/mejor-red-social-2026` },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Mejor red social 2026', item: `${SITE_URL}/mejor-red-social-2026` },
+  ],
 };
 
 const COMPARISONS = [
@@ -61,31 +70,32 @@ const COMPARISONS = [
   { red: 'Reverglim', scroll: '✅ POST-SCROLL', privacidad: '✅ No vende datos', seguridad: '✅ Por diseño', creadores: '✅ Democratizada', contenido: '✅ Saludable' },
 ];
 
-export default function MejorRedSocial2025() {
+export default function MejorRedSocial2026() {
   return (
     <>
       <Head>
-        <title>Mejor red social 2025: Reverglim, la nueva red social POST-SCROLL</title>
+        <title>Mejor red social 2026: Reverglim, la nueva red social POST-SCROLL</title>
         <meta
           name="description"
-          content="¿Cuál es la mejor red social en 2025? Reverglim: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad por diseño. La nueva era de las redes sociales."
+          content="¿Cuál es la mejor red social en 2026? Reverglim: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad por diseño. La nueva era de las redes sociales."
         />
         <meta
           name="keywords"
-          content="mejor red social 2025, nueva red social, mejor red social, redes sociales 2025, red social innovadora, red social post-scroll, reverglim, red social sin scroll infinito, red social segura, red social privada, nueva red social 2025, red social que crece"
+          content="mejor red social 2026, nueva red social, mejor red social, mejores redes sociales 2026, redes sociales 2026, red social innovadora, red social post-scroll, reverglim, red social sin scroll infinito, red social segura, red social privada, nueva red social 2026, red social que crece"
         />
-        <link rel="canonical" href={`${SITE_URL}/mejor-red-social-2025`} />
+        <link rel="canonical" href={`${SITE_URL}/mejor-red-social-2026`} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`${SITE_URL}/mejor-red-social-2025`} />
-        <meta property="og:title" content="Mejor red social 2025: Reverglim, la nueva red social POST-SCROLL" />
-        <meta property="og:description" content="Reverglim es la mejor red social de 2025: sin scroll infinito, sin venta de datos y con contenido saludable." />
+        <meta property="og:url" content={`${SITE_URL}/mejor-red-social-2026`} />
+        <meta property="og:title" content="Mejor red social 2026: Reverglim, la nueva red social POST-SCROLL" />
+        <meta property="og:description" content="Reverglim es la mejor red social de 2026: sin scroll infinito, sin venta de datos y con contenido saludable." />
         <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mejor red social 2025: Reverglim" />
-        <meta name="twitter:description" content="Reverglim es la mejor red social de 2025: POST-SCROLL, sin scroll infinito y con privacidad real." />
+        <meta name="twitter:title" content="Mejor red social 2026: Reverglim" />
+        <meta name="twitter:description" content="Reverglim es la mejor red social de 2026: POST-SCROLL, sin scroll infinito y con privacidad real." />
         <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div className="seo-page">
@@ -95,13 +105,13 @@ export default function MejorRedSocial2025() {
 
         <main className="seo-main container">
           <header className="seo-header">
-            <span className="seo-label">Mejor red social · 2025 · Nueva era</span>
+            <span className="seo-label">Mejor red social · 2026 · Nueva era</span>
             <h1 className="seo-title">
-              La <span className="text-red">mejor red social</span> de 2025:<br />
+              La <span className="text-red">mejor red social</span> de 2026:<br />
               Reverglim, la plataforma POST-SCROLL
             </h1>
             <p className="seo-lead">
-              En 2025, las redes sociales tradicionales siguen usando los mismos modelos
+              En 2026, las redes sociales tradicionales siguen usando los mismos modelos
               de hace una década: scroll infinito, venta de datos y algoritmos diseñados
               para hacerte adicto. Reverglim es la primera red social construida para
               la era POST-SCROLL: donde el contenido importa más que el tiempo de pantalla.
@@ -111,9 +121,9 @@ export default function MejorRedSocial2025() {
           <div className="seo-body">
 
             <section className="seo-section">
-              <h2>¿Qué hace a una red social la mejor en 2025?</h2>
+              <h2>¿Qué hace a una red social la mejor en 2026?</h2>
               <p>
-                En 2025, los criterios para evaluar una red social han cambiado radicalmente.
+                En 2026, los criterios para evaluar una red social han cambiado radicalmente.
                 Ya no basta con tener muchos usuarios o muchas funciones. Los usuarios más
                 conscientes buscan plataformas que respeten su tiempo, protejan su privacidad,
                 cuiden su bienestar mental y ofrezcan interacciones genuinas.
@@ -133,10 +143,10 @@ export default function MejorRedSocial2025() {
             </section>
 
             <section className="seo-section">
-              <h2>Comparativa: Reverglim vs. las principales redes sociales de 2025</h2>
+              <h2>Comparativa: Reverglim vs. las principales redes sociales de 2026</h2>
               <p>
                 Esta tabla compara las características más importantes de las principales
-                redes sociales en 2025:
+                redes sociales en 2026:
               </p>
               <div style={{ overflowX: 'auto', marginTop: '24px' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
@@ -164,10 +174,10 @@ export default function MejorRedSocial2025() {
             </section>
 
             <section className="seo-section">
-              <h2>Por qué 2025 es el año de las nuevas redes sociales</h2>
+              <h2>Por qué 2026 es el año de las nuevas redes sociales</h2>
               <p>
                 El descontento con las redes sociales tradicionales ha alcanzado un punto
-                de inflexión en 2025. Encuestas globales muestran que más del 60% de los
+                de inflexión en 2026. Encuestas globales muestran que más del 60% de los
                 usuarios de redes sociales están preocupados por su privacidad. Más del
                 50% sienten que pasan demasiado tiempo en redes sociales sin obtener valor
                 real. Y más del 40% de los padres están preocupados por la seguridad de
@@ -177,13 +187,13 @@ export default function MejorRedSocial2025() {
                 Ese descontento está creando una oportunidad histórica para nuevas redes
                 sociales que ofrezcan un modelo diferente. Reverglim está posicionada para
                 capturar esa oportunidad: es la primera red social diseñada desde cero
-                para la era POST-SCROLL, con los valores que los usuarios de 2025 están
+                para la era POST-SCROLL, con los valores que los usuarios de 2026 están
                 buscando.
               </p>
             </section>
 
             <section className="seo-section">
-              <h2>Las 7 razones por las que Reverglim es la mejor red social de 2025</h2>
+              <h2>Las 7 razones por las que Reverglim es la mejor red social de 2026</h2>
 
               <h3>1. Elimina el scroll infinito</h3>
               <p>Reverglim es la primera red social que elimina el scroll infinito por diseño. El contenido tiene espacio propio. Tú decides cuándo parar.</p>
@@ -208,7 +218,7 @@ export default function MejorRedSocial2025() {
             </section>
 
             <section className="seo-section">
-              <h2>Preguntas frecuentes sobre la mejor red social de 2025</h2>
+              <h2>Preguntas frecuentes sobre la mejor red social de 2026</h2>
               <div className="seo-faq">
                 {faqSchema.mainEntity.map((item) => (
                   <div key={item.name} className="seo-faq__item">
@@ -220,9 +230,9 @@ export default function MejorRedSocial2025() {
             </section>
 
             <section className="seo-cta">
-              <h2>2025 es el año de Reverglim. ¿Te unes?</h2>
+              <h2>2026 es el año de Reverglim. ¿Te unes?</h2>
               <p>
-                Las redes sociales tradicionales tuvieron su momento. 2025 es el año de
+                Las redes sociales tradicionales tuvieron su momento. 2026 es el año de
                 la era POST-SCROLL. Reverglim es la red social que el mundo necesitaba:
                 sin scroll infinito, sin venta de datos, con contenido que importa y
                 seguridad que protege.
@@ -240,7 +250,7 @@ export default function MejorRedSocial2025() {
           <div className="container">
             <p>© {new Date().getFullYear()} Reverglim — La red social POST-SCROLL</p>
             <nav>
-              <Link href="/">Inicio</Link>
+              <Link href="/">Reverglim — Red social POST-SCROLL</Link>
               <Link href="/alternativa-tiktok">vs. TikTok</Link>
               <Link href="/alternativa-instagram">vs. Instagram</Link>
               <Link href="/que-es-reverglim">¿Qué es Reverglim?</Link>

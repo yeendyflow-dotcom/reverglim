@@ -90,19 +90,32 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Reverglim | Conecta, comparte, destaca</title>
+        <title>Reverglim | Red social POST-SCROLL: conecta, comparte y destaca</title>
         <meta
           name="description"
-          content="Reverglim es la red social móvil creada para conectar, compartir y destacar de una manera diferente."
+          content="Reverglim es la red social POST-SCROLL: sin scroll infinito, con contenido exclusivo y saludable, privacidad real y seguridad por diseño. Descubre la alternativa a TikTok e Instagram."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://ik.imagekit.io/yfitk2mna/Orange_and_Black_Illustrative_Engineering_Services_Logo_Design___5_-removebg-preview.png?updatedAt=1778986456032" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
-          rel="stylesheet"
+        <meta
+          name="keywords"
+          content="reverglim, rever, reverll, red social, red social post-scroll, nueva red social, alternativa tiktok, alternativa instagram, mejor red social, red social segura, red social sin publicidad, conectar compartir destacar"
         />
+        <link rel="canonical" href="https://reverglim.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reverglim.com/" />
+        <meta property="og:title" content="Reverglim | Red social POST-SCROLL: conecta, comparte y destaca" />
+        <meta
+          property="og:description"
+          content="Reverglim es la red social POST-SCROLL: sin scroll infinito, contenido exclusivo y saludable, privacidad real y seguridad por diseño."
+        />
+        <meta property="og:image" content="https://reverglim.com/images/og-image.jpg" />
+        <meta property="og:locale" content="es" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Reverglim | Red social POST-SCROLL" />
+        <meta
+          name="twitter:description"
+          content="Reverglim es la red social POST-SCROLL: sin scroll infinito, con privacidad real y seguridad por diseño."
+        />
+        <meta name="twitter:image" content="https://reverglim.com/images/og-image.jpg" />
       </Head>
 
       {/* ================= HERO ================= */}
@@ -152,7 +165,7 @@ export default function Home() {
 
         <div className="hero__content">
           <h1 className="hero__title">
-            DESCUBRE UNA <span className="text-red">RED SOCIAL</span>
+            REVERGLIM, UNA <span className="text-red">RED SOCIAL</span>
             <br />
             DIFERENTE
           </h1>
@@ -319,10 +332,12 @@ export default function Home() {
               <li><a href="/term">Términos y condiciones</a></li>
               <li><a href="/privacidad">Política y privacidad</a></li>
               <li><a href="/seguridad-infantil">Seguridad infantil</a></li>
+              <li><a href="/red-social-segura-menores">Red social segura para menores</a></li>
+              <li><a href="/red-social-sin-publicidad">Red social sin publicidad</a></li>
               <li><a href="/que-es-reverglim">¿Qué es Reverglim?</a></li>
               <li><a href="/alternativa-tiktok">Reverglim vs. TikTok</a></li>
               <li><a href="/alternativa-instagram">Reverglim vs. Instagram</a></li>
-              <li><a href="/mejor-red-social-2025">Mejor red social 2025</a></li>
+              <li><a href="/mejor-red-social-2026">Mejor red social 2026</a></li>
             </ul>
           </div>
         </footer>

@@ -45,7 +45,7 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'La mejor alternativa a TikTok en 2025: Reverglim, la red social POST-SCROLL',
+  headline: 'La mejor alternativa a TikTok en 2026: Reverglim, la red social POST-SCROLL',
   description: 'Descubre por qué Reverglim es la mejor alternativa a TikTok: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad por diseño.',
   url: `${SITE_URL}/alternativa-tiktok`,
   inLanguage: 'es',
@@ -54,31 +54,41 @@ const articleSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/alternativa-tiktok` },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Alternativa a TikTok', item: `${SITE_URL}/alternativa-tiktok` },
+  ],
+};
+
 export default function AlternativaTikTok() {
   return (
     <>
       <Head>
-        <title>Alternativa a TikTok 2025: Reverglim, la red social sin scroll infinito</title>
+        <title>Alternativa a TikTok 2026: Reverglim, la red social sin scroll infinito</title>
         <meta
           name="description"
           content="¿Buscas una alternativa a TikTok? Reverglim es la red social POST-SCROLL: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad avanzada. Descúbrela."
         />
         <meta
           name="keywords"
-          content="alternativa tiktok, alternativa a tiktok, red social sin scroll infinito, mejor alternativa tiktok 2025, red social diferente a tiktok, nueva red social, reverglim, red social post-scroll, red social sin algoritmo adictivo, red social saludable"
+          content="alternativa tiktok, alternativa a tiktok, red social sin scroll infinito, mejor alternativa tiktok 2026, red social diferente a tiktok, nueva red social, reverglim, red social post-scroll, red social sin algoritmo adictivo, red social saludable"
         />
         <link rel="canonical" href={`${SITE_URL}/alternativa-tiktok`} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`${SITE_URL}/alternativa-tiktok`} />
-        <meta property="og:title" content="Alternativa a TikTok 2025: Reverglim, la red social sin scroll infinito" />
+        <meta property="og:title" content="Alternativa a TikTok 2026: Reverglim, la red social sin scroll infinito" />
         <meta property="og:description" content="Reverglim es la mejor alternativa a TikTok: sin scroll infinito, sin venta de datos y con contenido saludable." />
         <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Alternativa a TikTok 2025: Reverglim" />
+        <meta name="twitter:title" content="Alternativa a TikTok 2026: Reverglim" />
         <meta name="twitter:description" content="Reverglim es la red social POST-SCROLL: la mejor alternativa a TikTok sin scroll infinito." />
         <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div className="seo-page">
@@ -88,9 +98,9 @@ export default function AlternativaTikTok() {
 
         <main className="seo-main container">
           <header className="seo-header">
-            <span className="seo-label">Alternativa a TikTok · Red social · 2025</span>
+            <span className="seo-label">Alternativa a TikTok · Red social · 2026</span>
             <h1 className="seo-title">
-              La mejor <span className="text-red">alternativa a TikTok</span> en 2025:<br />
+              La mejor <span className="text-red">alternativa a TikTok</span> en 2026:<br />
               Reverglim, la red social POST-SCROLL
             </h1>
             <p className="seo-lead">
@@ -266,7 +276,7 @@ export default function AlternativaTikTok() {
           <div className="container">
             <p>© {new Date().getFullYear()} Reverglim — La red social POST-SCROLL</p>
             <nav>
-              <Link href="/">Inicio</Link>
+              <Link href="/">Reverglim — Red social POST-SCROLL</Link>
               <Link href="/alternativa-instagram">vs. Instagram</Link>
               <Link href="/que-es-reverglim">¿Qué es Reverglim?</Link>
               <Link href="/privacidad">Privacidad</Link>

@@ -8,10 +8,38 @@ export default function SeguridadInfantil() {
       <Head>
         <title>Seguridad Infantil y Protección — Reverglim</title>
         <meta name="description" content="Nuestra prioridad es la protección de los menores. Conoce los protocolos de seguridad y el escudo social de Reverglim." />
-        <link rel="icon" href="https://ik.imagekit.io/yfitk2mna/Orange_and_Black_Illustrative_Engineering_Services_Logo_Design___5_-removebg-preview.png?updatedAt=1778986456032" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <meta name="keywords" content="seguridad infantil redes sociales, protección menores internet, reverglim seguridad, red social segura niños, bloqueo automático redes sociales, reportes colectivos, chat seguro menores, red social sin peligros" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <link rel="canonical" href="https://reverglim.com/seguridad-infantil" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://reverglim.com/seguridad-infantil" />
+        <meta property="og:title" content="Seguridad Infantil y Protección — Reverglim" />
+        <meta property="og:description" content="Nuestra prioridad es la protección de los menores. Conoce los protocolos de seguridad y el escudo social de Reverglim." />
+        <meta property="og:image" content="https://reverglim.com/images/og-image.jpg" />
+        <meta property="og:site_name" content="Reverglim" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Seguridad Infantil y Protección — Reverglim" />
+        <meta name="twitter:description" content="Nuestra prioridad es la protección de los menores. Conoce los protocolos de seguridad y el escudo social de Reverglim." />
+        <meta name="twitter:image" content="https://reverglim.com/images/og-image.jpg" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: 'Seguridad Infantil y Protección — Reverglim',
+          description: 'Nuestra prioridad es la protección de los menores. Conoce los protocolos de seguridad y el escudo social de Reverglim.',
+          url: 'https://reverglim.com/seguridad-infantil',
+          inLanguage: 'es',
+          author: { '@type': 'Organization', name: 'Reverglim', url: 'https://reverglim.com' },
+          publisher: { '@type': 'Organization', name: 'Reverglim', url: 'https://reverglim.com' },
+          mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://reverglim.com/seguridad-infantil' },
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://reverglim.com' },
+            { '@type': 'ListItem', position: 2, name: 'Seguridad infantil', item: 'https://reverglim.com/seguridad-infantil' },
+          ],
+        }) }} />
       </Head>
 
       <nav className={styles.backNav}>
@@ -122,6 +150,8 @@ export default function SeguridadInfantil() {
       <footer className={styles.pageFooter}>
         <p>© {new Date().getFullYear()} Reverglim — Todos los derechos reservados.</p>
         <nav>
+          <Link href="/">Reverglim — Red social POST-SCROLL</Link>
+          <Link href="/red-social-segura-menores">Red social segura para menores</Link>
           <Link href="/term">Términos y condiciones</Link>
           <Link href="/privacidad">Política y privacidad</Link>
         </nav>
