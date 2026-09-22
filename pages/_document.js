@@ -88,7 +88,9 @@ export default function Document() {
         <meta charSet="UTF-8" />
 
         {/* ── Google Search Console verification ── */}
-        <meta name="google-site-verification" content="e6758bfc9ff45603" />
+        {/* Cuenta actual (método meta tag) */}
+        <meta name="google-site-verification" content="bssiv53xQrbjedpyiRYz3PzTAArHsraNfkg3b0gepGQ" />
+        {/* Las cuentas anteriores siguen verificadas vía /googlee6758bfc9ff45603.html en public/ */}
 
         {/* ── Favicon / PWA icons ── */}
         <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
