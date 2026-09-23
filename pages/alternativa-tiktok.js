@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-const SITE_URL = 'https://reverglim.com';
+import { SITE_URL } from '../lib/site';
 
 const faqSchema = {
   '@context': 'https://schema.org',

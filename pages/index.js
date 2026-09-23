@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useEffect, useRef, useState } from 'react';
+import { SITE_URL } from '../lib/site';
 
 const NAV_LINKS = [
   { label: 'INICIO', href: '#inicio' },
@@ -99,15 +100,16 @@ export default function Home() {
           name="keywords"
           content="reverglim, rever, reverll, red social, red social post-scroll, nueva red social, alternativa tiktok, alternativa instagram, mejor red social, red social segura, red social sin publicidad, conectar compartir destacar"
         />
-        <link rel="canonical" href="https://reverglim.com/" />
+        <link rel="canonical" href={`${SITE_URL}/`} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://reverglim.com/" />
+        <meta property="og:url" content={`${SITE_URL}/`} />
         <meta property="og:title" content="Reverglim | Red social POST-SCROLL: conecta, comparte y destaca" />
         <meta
           property="og:description"
           content="Reverglim es la red social POST-SCROLL: sin scroll infinito, contenido exclusivo y saludable, privacidad real y seguridad por diseño."
         />
-        <meta property="og:image" content="https://reverglim.com/images/og-image.jpg" />
+        <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
+        <meta property="og:site_name" content="Reverglim" />
         <meta property="og:locale" content="es" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reverglim | Red social POST-SCROLL" />
@@ -115,7 +117,7 @@ export default function Home() {
           name="twitter:description"
           content="Reverglim es la red social POST-SCROLL: sin scroll infinito, con privacidad real y seguridad por diseño."
         />
-        <meta name="twitter:image" content="https://reverglim.com/images/og-image.jpg" />
+        <meta name="twitter:image" content={`${SITE_URL}/images/og-image.jpg`} />
       </Head>
 
       {/* ================= HERO ================= */}
@@ -127,7 +129,7 @@ export default function Home() {
           loop
           muted
           playsInline
-          poster="/images/hero-poster.jpg"
+          poster="/images/og-image.jpg"
         >
           <source src="https://cdn.coverr.co/videos/coverr-a-girl-using-a-smartphone-to-take-pictures-of-the-sea-1907/720p.mp4" type="video/mp4" />
         </video>
@@ -298,7 +300,7 @@ export default function Home() {
               loop
               muted
               playsInline
-              poster="/images/vertical-poster.jpg"
+              poster="/images/og-image.jpg"
             >
               <source src="https://ik.imagekit.io/yfitk2mna/1.4%20M.mp4?updatedAt=1789744604688" type="video/mp4" />
             </video>

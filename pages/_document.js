@@ -1,11 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-
-const SITE_URL = 'https://reverglim.com';
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SOCIAL_PROFILES } from '../lib/site';
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Reverglim',
+  '@id': `${SITE_URL}/#organization`,
+  name: SITE_NAME,
   alternateName: ['Reverglim App', 'Rglim', 'Reverglim Red Social', 'Red Social Post-Scroll'],
   url: SITE_URL,
   logo: {
@@ -17,10 +17,19 @@ const organizationSchema = {
   slogan: 'La red social POST-SCROLL donde el contenido exclusivo destaca',
   description:
     'Reverglim es una red social móvil diferente: una plataforma POST-SCROLL donde el contenido exclusivo se destaca, el scroll infinito termina y la interacción entre usuarios es más humana, segura e innovadora.',
-  sameAs: [
-    'https://www.instagram.com/reverglim/',
-    'https://www.instagram.com/rglimoficial/',
+  brand: {
+    '@type': 'Brand',
+    name: SITE_NAME,
+  },
+  knowsAbout: [
+    'red social',
+    'red social post-scroll',
+    'contenido exclusivo',
+    'bienestar digital',
+    'seguridad en redes sociales',
+    'red social sin publicidad',
   ],
+  sameAs: SOCIAL_PROFILES,
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'soporte@reverglim.com',
@@ -32,38 +41,26 @@ const organizationSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Reverglim',
+  '@id': `${SITE_URL}/#website`,
+  name: SITE_NAME,
   alternateName: 'Reverglim — La red social POST-SCROLL',
   url: SITE_URL,
   inLanguage: 'es',
-  description:
-    'Reverglim es la red social POST-SCROLL: contenido exclusivo destacado, sin scroll infinito, con seguridad por diseño y bienestar digital.',
-  publisher: {
-    '@type': 'Organization',
-    name: 'Reverglim',
-    url: SITE_URL,
-  },
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${SITE_URL}/?q={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
+  description: SITE_DESCRIPTION,
+  publisher: { '@id': `${SITE_URL}/#organization` },
 };
 
 const softwareSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Reverglim',
+  name: SITE_NAME,
+  alternateName: 'Reverglim App',
   operatingSystem: 'Android, iOS',
   applicationCategory: 'SocialNetworkingApplication',
   description:
     'Reverglim es una red social móvil POST-SCROLL: la primera plataforma diseñada para que el contenido exclusivo destaque, con interacciones innovadoras, seguridad avanzada y protección de datos.',
   url: SITE_URL,
-  author: {
-    '@type': 'Organization',
-    name: 'Reverglim',
-    url: SITE_URL,
-  },
+  author: { '@id': `${SITE_URL}/#organization` },
   offers: {
     '@type': 'Offer',
     price: '0',
@@ -95,6 +92,7 @@ export default function Document() {
         {/* ── Favicon / PWA icons ── */}
         <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#E8112C" />
 
         {/* ── Fonts ── */}

@@ -1,0 +1,26 @@
+{
+  "name": "Reverglim",
+  "short_name": "Reverglim",
+  "description": "Reverglim es la red social POST-SCROLL: sin scroll infinito, con contenido exclusivo y saludable, privacidad real y seguridad por diseño.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "es",
+  "dir": "ltr",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#E8112C",
+  "categories": ["social", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

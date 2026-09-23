@@ -1,4 +1,10 @@
-const SITE_URL = 'https://reverglim.com';
+import { SITE_URL } from '../lib/site';
+
+// Fecha de la última modificación real del contenido del sitio.
+// IMPORTANTE: actualízala solo cuando cambie contenido real de las páginas.
+// Un lastmod que miente (p. ej. "hoy" en cada request) hace que Google
+// aprenda a ignorarlo. Al modificarlo, ejecuta también `npm run indexnow`.
+const LAST_MOD = '2026-09-23';
 
 const pages = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },
@@ -20,7 +26,7 @@ ${pages
   .map(
     ({ path, priority, changefreq }) => `  <url>
     <loc>${SITE_URL}${path}</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${LAST_MOD}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`
