@@ -19,6 +19,7 @@
 
 ## FASE 2 — Acciones manuales urgentes (30 min, críticas)
 
+
 1. **Vercel Dashboard → Settings → Domains** (resuelve el problema #1):
    - Configura `reverglim.com` como dominio de producción **sin redirect**.
    - Configura `www.reverglim.com` para redirigir a `reverglim.com`.
