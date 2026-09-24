@@ -67,10 +67,10 @@ export default function AlternativaTikTok() {
   return (
     <>
       <Head>
-        <title>Alternativa a TikTok 2026: Reverglim, la red social sin scroll infinito</title>
+        <title>Alternativa a TikTok 2026: Reverglim, red social sin scroll infinito</title>
         <meta
           name="description"
-          content="¿Buscas una alternativa a TikTok? Reverglim es la red social POST-SCROLL: sin scroll infinito, sin venta de datos, con contenido saludable y seguridad avanzada. Descúbrela."
+          content="¿Buscas una alternativa a TikTok? Reverglim es la red social POST-SCROLL: sin scroll infinito, sin venta de datos y con contenido saludable."
         />
         <meta
           name="keywords"
@@ -266,6 +266,7 @@ export default function AlternativaTikTok() {
               <div className="seo-cta__links">
                 <Link href="/" className="seo-cta__btn">Conocer Reverglim →</Link>
                 <Link href="/que-es-reverglim" className="seo-cta__btn seo-cta__btn--ghost">¿Qué es Reverglim?</Link>
+                <Link href="/mejor-red-social-2026" className="seo-cta__btn seo-cta__btn--ghost">Ranking de redes sociales 2026 →</Link>
               </div>
             </section>
 

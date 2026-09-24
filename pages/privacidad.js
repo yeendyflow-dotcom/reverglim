@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { SITE_URL } from '../lib/site';
 
 const SECTIONS = [
   {
@@ -60,13 +61,15 @@ export default function Privacidad() {
   return (
     <>
       <Head>
-        <title>Políticas de Privacidad | Reverglim</title>
-        <meta name="description" content="Políticas de privacidad de Reverglim." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://ik.imagekit.io/yfitk2mna/Orange_and_Black_Illustrative_Engineering_Services_Logo_Design___5_-removebg-preview.png?updatedAt=1778986456032" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <title>Política de Privacidad | Reverglim</title>
+        <meta name="description" content="Conoce cómo Reverglim protege tus datos: sin venta de información, sin publicidad dirigida y con encriptación de extremo a extremo. Tu privacidad es un derecho." />
+        <link rel="canonical" href={`${SITE_URL}/privacidad`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/privacidad`} />
+        <meta property="og:title" content="Política de Privacidad | Reverglim" />
+        <meta property="og:description" content="Reverglim no vende tus datos ni usa publicidad dirigida. Conoce nuestra política de privacidad." />
+        <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
+        <meta name="robots" content="noindex, follow" />
       </Head>
 
       <div className="privacy-page">

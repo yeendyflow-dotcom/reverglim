@@ -70,7 +70,7 @@ export default function RedSocialSeguraMenores() {
         <title>Red social segura para menores 2026: Reverglim, protección por diseño</title>
         <meta
           name="description"
-          content="¿Buscas una red social segura para menores? Reverglim: chat bloqueado por defecto, reportes colectivos automáticos y contenido saludable por política. Protección real para los más jóvenes."
+          content="¿Buscas una red social segura para menores? Reverglim: chat bloqueado por defecto, reportes colectivos automáticos y contenido saludable por política. Protección real."
         />
         <meta
           name="keywords"
@@ -238,6 +238,7 @@ export default function RedSocialSeguraMenores() {
               <div className="seo-cta__links">
                 <Link href="/" className="seo-cta__btn">Conocer Reverglim →</Link>
                 <Link href="/seguridad-infantil" className="seo-cta__btn seo-cta__btn--ghost">Seguridad infantil</Link>
+                <Link href="/mejor-red-social-2026" className="seo-cta__btn seo-cta__btn--ghost">Mejor red social 2026 →</Link>
               </div>
             </section>
 

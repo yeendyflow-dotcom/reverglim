@@ -153,6 +153,7 @@ export default function SeguridadInfantil() {
         <nav>
           <Link href="/">Reverglim — Red social POST-SCROLL</Link>
           <Link href="/red-social-segura-menores">Red social segura para menores</Link>
+          <Link href="/mejor-red-social-2026">Mejor red social 2026</Link>
           <Link href="/term">Términos y condiciones</Link>
           <Link href="/privacidad">Política y privacidad</Link>
         </nav>

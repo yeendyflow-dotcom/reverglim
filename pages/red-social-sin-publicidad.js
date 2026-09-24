@@ -70,7 +70,7 @@ export default function RedSocialSinPublicidad() {
         <title>Red social sin publicidad 2026: Reverglim, privacidad por diseño</title>
         <meta
           name="description"
-          content="¿Buscas una red social sin publicidad que no venda tus datos? Reverglim: privacidad por diseño, sin perfiles publicitarios, sin venta de información personal. La red social privada."
+          content="¿Buscas una red social sin publicidad que no venda tus datos? Reverglim: privacidad por diseño, sin perfiles publicitarios ni venta de información personal."
         />
         <meta
           name="keywords"
@@ -219,6 +219,7 @@ export default function RedSocialSinPublicidad() {
               <div className="seo-cta__links">
                 <Link href="/" className="seo-cta__btn">Conocer Reverglim →</Link>
                 <Link href="/privacidad" className="seo-cta__btn seo-cta__btn--ghost">Política de privacidad</Link>
+                <Link href="/mejor-red-social-2026" className="seo-cta__btn seo-cta__btn--ghost">La mejor red social de 2026 →</Link>
               </div>
             </section>
 

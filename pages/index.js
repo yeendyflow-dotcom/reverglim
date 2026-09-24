@@ -94,7 +94,7 @@ export default function Home() {
         <title>Reverglim | Red social POST-SCROLL: conecta, comparte y destaca</title>
         <meta
           name="description"
-          content="Reverglim es la red social POST-SCROLL: sin scroll infinito, con contenido exclusivo y saludable, privacidad real y seguridad por diseño. Descubre la alternativa a TikTok e Instagram."
+          content="Reverglim es la red social POST-SCROLL: sin scroll infinito, contenido exclusivo y saludable, privacidad real y seguridad por diseño. La alternativa a TikTok e Instagram."
         />
         <meta
           name="keywords"

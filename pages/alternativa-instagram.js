@@ -70,7 +70,7 @@ export default function AlternativaInstagram() {
         <title>Alternativa a Instagram 2026: Reverglim, la red social sin algoritmo opresor</title>
         <meta
           name="description"
-          content="¿Buscas una alternativa a Instagram? Reverglim es la red social POST-SCROLL: sin algoritmo que entierre tu contenido, sin venta de datos y con interacciones más humanas. Descúbrela."
+          content="¿Buscas una alternativa a Instagram? Reverglim es la red social POST-SCROLL: sin algoritmo que entierre tu contenido, sin venta de datos y con interacciones más humanas."
         />
         <meta
           name="keywords"
@@ -258,6 +258,7 @@ export default function AlternativaInstagram() {
               <div className="seo-cta__links">
                 <Link href="/" className="seo-cta__btn">Conocer Reverglim →</Link>
                 <Link href="/alternativa-tiktok" className="seo-cta__btn seo-cta__btn--ghost">vs. TikTok</Link>
+                <Link href="/mejor-red-social-2026" className="seo-cta__btn seo-cta__btn--ghost">La mejor red social de 2026 →</Link>
               </div>
             </section>
 

@@ -1,0 +1,103 @@
+Plan de 10 horas para posicionar "mejor red social 2026", "red social", etc.
+Estas son búsquedas con competencia altísima (Meta, TikTok, Wikipedia compiten por ellas). La estrategia realista en 10 horas:
+
+Hora 1-2 — Deploy + señales técnicas inmediatas
+Deploy del código actual (los fixes de canonical, descriptions, noindex en legales)
+
+npm run indexnow tras el deploy
+
+En Google Search Console: solicitar re-indexación manual de /, /que-es-reverglim, /alternativa-tiktok, /alternativa-instagram, /mejor-red-social-2026
+
+En Bing Webmaster Tools: importar desde GSC y enviar sitemap
+
+Por qué importa: Google no puede posicionarte en búsquedas competitivas si el sitio tiene señales técnicas rotas. Esto cierra esa deuda.
+
+Hora 3 — Wikidata (crítico para el AI Overview)
+Crear el item de Reverglim en https://wikidata.org:
+
+Tipo: SoftwareApplication + Organization
+
+Campos: nombre, descripción, sitio web (reverglim.com), país, industria (redes sociales), perfiles sociales
+
+Esto alimenta directamente el Knowledge Graph de Google → corrige el AI Overview que dice que Reverglim es una VPN
+
+Sin Wikidata, el AI Overview seguirá siendo incorrecto sin importar cuánto código optimices.
+
+Hora 4 — Google Business Profile
+Si hay entidad legal registrada:
+
+Crear perfil en https://business.google.com
+
+Categoría: "Empresa de software" o "Red social"
+
+Descripción con las keywords objetivo
+
+Enlace a reverglim.com
+
+Esto genera el panel de conocimiento de marca en Google cuando alguien busca "reverglim".
+
+Hora 5-6 — Contenido nuevo: 2 páginas de alto volumen
+Las búsquedas "red social" y "mejor red social" necesitan páginas con más profundidad semántica. Crear:
+
+/nueva-red-social — orientada a "nueva red social 2026", "red social nueva"
+/red-social-movil — orientada a "red social móvil", "app red social"
+
+Cada página: H1 con la keyword exacta, 800+ palabras, FAQ schema, breadcrumb schema, canonical, internal links hacia /mejor-red-social-2026 y /que-es-reverglim.
+
+Hora 7 — Perfiles sociales consistentes
+En cada perfil existente (Instagram @reverglim, @rglimoficial):
+
+Bio: incluir "reverglim.com" como enlace
+
+Descripción: mencionar "red social POST-SCROLL" y "mejor red social"
+
+Añadir los perfiles nuevos a SOCIAL_PROFILES en lib/site.js cuando existan
+
+Cuando crees TikTok, X (Twitter), YouTube o LinkedIn oficiales, añadirlos inmediatamente a lib/site.js:
+
+export const SOCIAL_PROFILES = [
+  'https://www.instagram.com/reverglim/',
+  'https://www.instagram.com/rglimoficial/',
+  // añadir aquí cuando existan:
+  // 'https://www.tiktok.com/@reverglim',
+  // 'https://x.com/reverglim',
+  // 'https://www.youtube.com/@reverglim',
+];
+
+
+js
+Hora 8 — AlternativeTo + Product Hunt + Crunchbase
+Registrar Reverglim en estos 3 directorios de tecnología:
+
+Directorio	URL	Por qué
+AlternativeTo	alternativeto.net	Backlink + aparece en búsquedas "alternativa a TikTok/Instagram"
+Product Hunt	producthunt.com	Backlink de autoridad + comunidad tech
+Crunchbase	crunchbase.com	Señal de entidad empresarial para Google
+En todos: nombre exacto "Reverglim", enlace a reverglim.com, descripción con "red social POST-SCROLL".
+
+Hora 9 — llms.txt + contenido para AI Overviews
+El archivo llms.txt ya existe y está bien. El siguiente paso es reforzar la señal para que Google AI Overview cite a Reverglim correctamente. En cada post de Instagram:
+
+Incluir en el caption: "Reverglim es una red social móvil POST-SCROLL. Más info: reverglim.com"
+
+Evitar que terceros (como la cuenta de Turbo VPN) usen el término sin contexto — reportar esos posts desde las cuentas oficiales
+
+Hora 10 — Medición y baseline
+Configurar el seguimiento para saber si está funcionando:
+
+GSC: anotar las impresiones actuales para "reverglim", "mejor red social 2026", "alternativa tiktok", "red social post-scroll"
+
+Crear alerta en Google Alerts para "reverglim" — notifica cada vez que alguien menciona la marca
+
+Verificar site:reverglim.com en Google — debe mostrar las 10 páginas indexadas
+
+Verificar site:reverglim.com en Bing — mismo check
+
+Expectativas realistas por keyword
+Búsqueda	Dificultad	Tiempo estimado
+"reverglim"	Baja (marca propia)	2-4 semanas tras deploy
+"alternativa tiktok"	Alta	3-6 meses con backlinks
+"alternativa instagram"	Alta	3-6 meses con backlinks
+"mejor red social 2026"	Muy alta	6-12 meses
+"red social"	Extrema (Wikipedia, Meta)	No realista sin autoridad de dominio masiva
+La prioridad inmediata es dominar "reverglim" (tu marca) y las búsquedas de cola larga como "red social post-scroll", "red social sin scroll infinito", "red social segura para menores" — ahí la competencia es mínima y el tráfico es cualificado.
