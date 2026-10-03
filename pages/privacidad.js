@@ -1,6 +1,5 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import { SITE_URL } from '../lib/site';
+import SEO from '../components/SEO';
+import SiteNav from '../components/SiteNav';
 
 const SECTIONS = [
   {
@@ -60,26 +59,15 @@ const SECTIONS = [
 export default function Privacidad() {
   return (
     <>
-      <Head>
-        <title>Política de Privacidad | Reverglim</title>
-        <meta name="description" content="Conoce cómo Reverglim protege tus datos: sin venta de información, sin publicidad dirigida y con encriptación de extremo a extremo. Tu privacidad es un derecho." />
-        <link rel="canonical" href={`${SITE_URL}/privacidad`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${SITE_URL}/privacidad`} />
-        <meta property="og:title" content="Política de Privacidad | Reverglim" />
-        <meta property="og:description" content="Reverglim no vende tus datos ni usa publicidad dirigida. Conoce nuestra política de privacidad." />
-        <meta property="og:image" content={`${SITE_URL}/images/og-image.jpg`} />
-        <meta name="robots" content="noindex, follow" />
-      </Head>
+      <SEO
+        title="Política de privacidad | Reverglim"
+        description="Consulta qué información recopila Reverglim, cómo se utiliza y qué opciones tienes para proteger tus datos personales."
+        path="/privacidad"
+      />
+
+      <SiteNav appearance="dark" />
 
       <div className="privacy-page">
-        <nav className="privacy-nav">
-          <Link href="/" className="privacy-nav__logo">
-            <img src="https://ik.imagekit.io/yfitk2mna/Orange_and_Black_Illustrative_Engineering_Services_Logo_Design___5_-removebg-preview.png?updatedAt=1778986456032" alt="Reverglim" />
-          </Link>
-          <Link href="/" className="privacy-nav__back">← Volver al inicio</Link>
-        </nav>
-
         <main className="privacy-main container">
           <p className="privacy-label">Legal</p>
           <h1 className="privacy-title">POLÍTICAS DE<br />PRIVACIDAD</h1>
@@ -101,31 +89,6 @@ export default function Privacidad() {
           </div>
         </main>
 
-        <div className="footer-wrapper">
-          <footer className="footer">
-            <div className="footer__col">
-              <h3>Reverglim</h3>
-              <p>Únete a Reverglim y disfruta de los beneficios que ofrecemos para ti.</p>
-            </div>
-            <div className="footer__col">
-              <h4>Contacto</h4>
-              <ul>
-                <li>+1 (829) 931-5704</li>
-                <li>soporte@reverglim.com</li>
-                <li>@reverglim</li>
-              </ul>
-            </div>
-            <div className="footer__col">
-              <h4>Enlaces rápidos</h4>
-              <ul>
-                <li><a href="#">Términos y condiciones</a></li>
-                <li><Link href="/privacidad">Política y privacidad</Link></li>
-                <li><a href="#">Seguridad infantil</a></li>
-              </ul>
-            </div>
-          </footer>
-          <p className="footer__copyright">© {new Date().getFullYear()} Reverglim — Todos los derechos reservados.</p>
-        </div>
       </div>
     </>
   );
