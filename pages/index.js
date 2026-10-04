@@ -159,7 +159,7 @@ export default function Home() {
                 <span className="contacto__label">EMAIL</span>
                 <a href="mailto:soporte@reverglim.com">soporte@reverglim.com</a>
                 <span className="contacto__label">REVERGLIM</span>
-                <a href="https://www.instagram.com/reverglim/" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   @reverglim
                 </a>
               </div>
