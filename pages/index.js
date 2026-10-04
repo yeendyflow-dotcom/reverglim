@@ -7,7 +7,7 @@ import SiteNav from '../components/SiteNav';
 const SECTIONS = ['inicio', 'stickers', 'contacto'];
 
 const homepageDescription =
-  'Reverglim es una red social altamente interactiva con contenido exclusivo. En el feed de Reels, conversa con comentarios de texto y notas de voz.';
+  'Reverglim es una red social altamente interactiva con contenido exclusivo. Participa en el feed de Reels con comentarios escritos y notas de voz.';
 
 const homepageStructuredData = [
   {
@@ -100,9 +100,9 @@ export default function Home() {
                 DIFERENTE
               </h1>
               <p className="inicio__sub">
-                RED SOCIAL ALTAMENTE INTERACTIVA CON CONTENIDO EXCLUSIVO.
-                COMENTA CADA REEL CON TEXTO O NOTAS DE VOZ Y LLEVA LA
-                CONVERSACIÓN MÁS ALLÁ DEL SCROLL.
+                REVERGLIM ES UNA RED SOCIAL ALTAMENTE INTERACTIVA CON CONTENIDO
+                EXCLUSIVO. PARTICIPA EN EL FEED DE REELS CON COMENTARIOS DE TEXTO
+                Y NOTAS DE VOZ.
               </p>
             </div>
             <div className="inicio__media">
