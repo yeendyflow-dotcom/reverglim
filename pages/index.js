@@ -144,6 +144,7 @@ export default function Home() {
           </div>
         </section>
 
+
         {/* ── CONTACTO ── */}
         <section id="contacto" className="section section--contacto">
           <div className="section__inner contacto__wrap">
@@ -157,7 +158,7 @@ export default function Home() {
               <div className="contacto__item">
                 <span className="contacto__label">EMAIL</span>
                 <a href="mailto:soporte@reverglim.com">soporte@reverglim.com</a>
-                <span className="contacto__label">INSTAGRAM</span>
+                <span className="contacto__label">REVERGLIM</span>
                 <a href="https://www.instagram.com/reverglim/" target="_blank" rel="noopener noreferrer">
                   @reverglim
                 </a>
