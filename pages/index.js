@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Reverglim | Red social interactiva con Reels, texto y voz"
+        title="Reverglim"
         description={homepageDescription}
         structuredData={homepageStructuredData}
       />
