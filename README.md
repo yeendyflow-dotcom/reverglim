@@ -88,5 +88,6 @@ reemplaza el `src` de las etiquetas `<source>` en `pages/index.js` por la URL co
   y los datos estructurados.
 - `public/robots.txt` permite el rastreo y anuncia el sitemap.
 - `pages/sitemap.xml.js` genera el sitemap; actualiza su lista de rutas al añadir o quitar
-  páginas públicas.
+  páginas públicas. La información institucional y la explicación de Reverglim comparten
+  `/reverglim`; las rutas antiguas `/nosotros` y `/que-es-reverglim` redirigen a ella.
 - `next.config.js` redirige permanentemente `reverglim.vercel.app` a `reverglim.com`.

@@ -4,9 +4,7 @@ import { useRouter } from 'next/router';
 
 const NAV_LINKS = [
   { label: 'INICIO', id: 'inicio', href: '/' },
-  { label: 'NOSOTROS', id: 'nosotros', href: '/nosotros' },
   { label: 'MISIÓN', id: 'mision', href: '/mision' },
-  { label: 'QUÉ ES', id: 'que-es-reverglim', href: '/que-es-reverglim' },
   { label: 'stickers', id: 'stickers', href: '/#stickers' },
   { label: 'INVERTIR', id: 'invertir', href: '/invertir' },
   { label: 'CONTACTO', id: 'contacto', href: '/#contacto' },
@@ -66,13 +64,8 @@ export default function SiteNav({ activeSection = '', onHomeSectionNavigate, app
 
         <Link
           className="navbar__brand"
-          href="/"
-          onClick={(event) => {
-            if (router.pathname === '/') {
-              event.preventDefault();
-              onHomeSectionNavigate('inicio');
-            }
-          }}
+          href="/reverglim"
+          aria-label="Conoce Reverglim"
         >
           REVERGLIM
         </Link>

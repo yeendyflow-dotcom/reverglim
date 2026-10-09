@@ -2,10 +2,9 @@ import { SITE_URL } from '../lib/site';
 
 const PAGES = [
   '/',
-  '/nosotros',
+  '/reverglim',
   '/mision',
   '/invertir',
-  '/que-es-reverglim',
   '/term',
   '/privacidad',
   '/seguridad-infantil',

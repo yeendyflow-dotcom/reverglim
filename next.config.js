@@ -10,13 +10,23 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/nosotros',
+        destination: '/reverglim',
+        permanent: true,
+      },
+      {
+        source: '/que-es-reverglim',
+        destination: '/reverglim',
+        permanent: true,
+      },
+      {
         source: '/alternativa-tiktok',
-        destination: '/que-es-reverglim',
+        destination: '/reverglim',
         permanent: true,
       },
       {
         source: '/alternativa-instagram',
-        destination: '/que-es-reverglim',
+        destination: '/reverglim',
         permanent: true,
       },
       {
@@ -31,7 +41,7 @@ const nextConfig = {
       },
       {
         source: '/mejor-red-social-2026',
-        destination: '/que-es-reverglim',
+        destination: '/reverglim',
         permanent: true,
       },
     ];

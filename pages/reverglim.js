@@ -5,14 +5,14 @@ import { SITE_URL } from '../lib/site';
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: '¿Qué es Reverglim? Red social interactiva con Reels, texto y voz',
+  headline: '¿Qué es Reverglim? Una red social para compartir y conversar',
   description:
-    'Descubre Reverglim: una red social altamente interactiva donde el contenido exclusivo se encuentra con conversaciones de texto y voz en el feed de Reels.',
-  url: `${SITE_URL}/que-es-reverglim`,
+    'Conoce Reverglim: una red social móvil para compartir contenido y conversar con comentarios de texto y notas de voz en el feed de Reels.',
+  url: `${SITE_URL}/reverglim`,
   inLanguage: 'es',
   author: { '@type': 'Organization', name: 'Reverglim', url: SITE_URL },
   publisher: { '@type': 'Organization', name: 'Reverglim', url: SITE_URL },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/que-es-reverglim` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/reverglim` },
 };
 
 const faqSchema = {
@@ -24,7 +24,7 @@ const faqSchema = {
       name: '¿Qué es Reverglim?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Reverglim es una red social altamente interactiva que combina contenido exclusivo con conversaciones en el feed de Reels mediante comentarios escritos y notas de voz.',
+        text: 'Reverglim es una red social móvil para compartir contenido y conversar mediante comentarios escritos y notas de voz en el feed de Reels.',
       },
     },
     {
@@ -32,7 +32,7 @@ const faqSchema = {
       name: '¿Cómo se conversa en el feed de Reels de Reverglim?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Las personas pueden participar en la conversación sobre el contenido con comentarios escritos y notas de voz que aparecen en el feed de Reels.',
+        text: 'Las personas pueden participar en la conversación sobre el contenido con comentarios escritos y notas de voz.',
       },
     },
     {
@@ -40,19 +40,19 @@ const faqSchema = {
       name: '¿Qué significa POST-SCROLL?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'POST-SCROLL expresa la idea de que la experiencia social no se limita a desplazarse por el contenido: también puede incluir conversaciones con texto y voz.',
+        text: 'POST-SCROLL expresa la idea de que la experiencia social puede ir más allá de desplazarse por publicaciones e incluir conversaciones con texto y voz.',
       },
     },
   ],
 };
 
-export default function QueEsReverglim() {
+export default function Reverglim() {
   return (
     <>
       <SEO
-        title="¿Qué es Reverglim? | Reels, texto y voz"
-        description="Descubre Reverglim: una red social altamente interactiva con contenido exclusivo y conversaciones de texto y voz en el feed de Reels."
-        path="/que-es-reverglim"
+        title="Reverglim | Qué es y quiénes somos"
+        description="Conoce Reverglim, una red social móvil para compartir contenido y conversar con comentarios de texto y notas de voz en el feed de Reels."
+        path="/reverglim"
         type="article"
         structuredData={[articleSchema, faqSchema]}
       />
@@ -64,15 +64,34 @@ export default function QueEsReverglim() {
             <span className="seo-label">Reverglim · Red social interactiva</span>
             <h1 className="seo-title">¿Qué es Reverglim?</h1>
             <p className="seo-lead">
-              Reverglim es una red social altamente interactiva que reúne contenido
-              exclusivo y conversaciones en el feed de Reels. Además de descubrir
-              videos, las personas pueden participar con comentarios escritos y
-              notas de voz que forman parte de la conversación alrededor de cada
-              publicación.
+              Reverglim es una red social móvil creada para quienes quieren
+              conectar, compartir y destacar de una manera diferente. Reúne
+              contenido exclusivo y conversaciones en el feed de Reels, donde las
+              personas pueden participar con comentarios escritos y notas de voz.
             </p>
           </header>
 
           <div className="seo-body">
+            <section className="reverglim-about">
+              <img
+                className="reverglim-about__image"
+                src="https://ik.imagekit.io/q9tlsrum4/Image-Photoroom.png?updatedAt=1790990685121"
+                alt="Experiencia social de Reverglim"
+              />
+              <div>
+                <h2>Quiénes somos</h2>
+                <p>
+                  Reverglim busca que compartir contenido y conversar sobre cada
+                  publicación formen parte de una misma experiencia social.
+                </p>
+                <p>
+                  En Reverglim nos comprometemos a cultivar contenido exclusivo,
+                  eliminando por completo noticias, muertes, accidentes,
+                  conflictos sociales y pornografía.
+                </p>
+              </div>
+            </section>
+
             <section className="seo-section">
               <h2>Una red social para compartir y conversar</h2>
               <p>
@@ -105,7 +124,8 @@ export default function QueEsReverglim() {
                 POST-SCROLL es la expresión que resume esta visión: la experiencia
                 social puede ir más allá de desplazarse entre publicaciones. En
                 Reverglim, los comentarios escritos y las notas de voz en el feed
-                de Reels invitan a continuar la interacción alrededor del contenido.
+                de Reels invitan a continuar la interacción alrededor del
+                contenido.
               </p>
             </section>
 
@@ -115,16 +135,16 @@ export default function QueEsReverglim() {
                 <div className="seo-faq__item">
                   <h3>¿Qué es Reverglim?</h3>
                   <p>
-                    Es una red social altamente interactiva que combina contenido
-                    exclusivo con conversaciones mediante comentarios escritos y
-                    notas de voz en el feed de Reels.
+                    Reverglim es una red social móvil para compartir contenido y
+                    conversar mediante comentarios escritos y notas de voz en el
+                    feed de Reels.
                   </p>
                 </div>
                 <div className="seo-faq__item">
                   <h3>¿Cómo se conversa en el feed de Reels?</h3>
                   <p>
                     Puedes participar en la conversación sobre el contenido con
-                    comentarios escritos y notas de voz que aparecen en el feed.
+                    comentarios escritos y notas de voz.
                   </p>
                 </div>
                 <div className="seo-faq__item">
@@ -153,7 +173,10 @@ export default function QueEsReverglim() {
                 >
                   Seguir @reverglim
                 </a>
-                <a href="mailto:soporte@reverglim.com" className="seo-cta__btn seo-cta__btn--ghost">
+                <a
+                  href="mailto:soporte@reverglim.com"
+                  className="seo-cta__btn seo-cta__btn--ghost"
+                >
                   Contactar a Reverglim
                 </a>
               </div>
