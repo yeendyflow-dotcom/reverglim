@@ -1044,7 +1044,10 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
 .seo-faq__item p { color: #000000; font-size: 0.97rem; line-height: 1.75; max-width: 68ch; }
 
 .seo-cta {
-  background: #16161a; border: 1px solid rgba(255,255,255,0.08);
+  position:relative;
+  top:-20px;
+  background: #e2e2e2; border:
+ 1px solid rgb(255, 0, 0);
   border-radius: 20px; padding: 48px;
 }
 
@@ -1060,11 +1063,12 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
 
 .seo-cta__btn {
   display: inline-flex; align-items: center; gap: 8px;
-  background: #e8112c; color: #000000; font-weight: 700; font-size: 0.95rem;
+  background: #e8112c; color: #ffffff; font-weight: 700; font-size: 0.95rem;
   padding: 13px 28px; border-radius: 10px; transition: background 0.2s, transform 0.2s;
 }
 
-.seo-cta__btn:hover { background: #a80f22; transform: translateY(-2px); }
+.seo-cta__btn:hover { background: #000000; transform: translateY(-2px); }
+.seo-cta__btn:hover svg { fill: #ffffff; }
 
 @media (max-width: 680px) {
   .reverglim-about {
@@ -1073,13 +1077,15 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
   }
 
   .reverglim-about__image {
-    aspect-ratio: 16 / 9;
+    position:relative;
   }
 }
 
 .seo-cta__btn--ghost {
   background: transparent; border: 1px solid rgba(255,255,255,0.08); color: #000000;
 }
+.seo-cta__btn--ghost svg { fill: #000000; transition: fill 0.2s; }  
+.seo-cta__btn--ghost:hover { background: #e8112c; border-color: #e8112c; color: #ffffff; }
 
 .seo-cta__btn--ghost:hover { background: #0d0d11; border-color: #e8112c; }
 

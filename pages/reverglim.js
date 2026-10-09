@@ -79,16 +79,17 @@ export default function Reverglim() {
                 alt="Experiencia social de Reverglim"
               />
               <div>
-                <h2>Quiénes somos</h2>
+                <h2>RED SOCIAL ALTAMENTE INTERACTIVA</h2>
                 <p>
-                  Reverglim busca que compartir contenido y conversar sobre cada
-                  publicación formen parte de una misma experiencia social.
+                  Reverglim se orienta a una interacción social HIPER - INNOVADORA, donde la seguridad, la comodidad y el contenido que visualizas se alinean a una interacción social FUTURISTA dejando a un lado lo obsoleto y fijando como objetivo principal la interacción colaborativa sin necesidad de internet.
+                </p>
+                <p> 
+                  Imagina un espacio donde la interacción social no dependa de una conexión a internet constante, sino que se base en la colaboración y la participación de todos.
                 </p>
                 <p>
-                  En Reverglim nos comprometemos a cultivar contenido exclusivo,
-                  eliminando por completo noticias, muertes, accidentes,
-                  conflictos sociales y pornografía.
+                  Nuestra misión es crear un entorno donde una conexión evolutiva forme parte de nosotros con el intercambio de señales virtuales entre dispositivos. En Reverglim nos centramos en la interacción y la participación de todos, ofreciendo una APP para expresarnos y conectar con otras personas que formen parte de nuestra comunidad.
                 </p>
+               
               </div>
             </section>
 
