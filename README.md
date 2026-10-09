@@ -81,3 +81,12 @@ reemplaza el `src` de las etiquetas `<source>` en `pages/index.js` por la URL co
 - Los badges de "Google Play" / "Apple Store" son componentes propios (no las imágenes
   oficiales). Te recomiendo sustituirlos por los badges oficiales de cada tienda
   siguiendo sus lineamientos de marca antes de publicar el sitio.
+
+## SEO y dominio canónico
+
+- `lib/site.js` define `https://reverglim.com` como URL canónica usada por los metadatos
+  y los datos estructurados.
+- `public/robots.txt` permite el rastreo y anuncia el sitemap.
+- `pages/sitemap.xml.js` genera el sitemap; actualiza su lista de rutas al añadir o quitar
+  páginas públicas.
+- `next.config.js` redirige permanentemente `reverglim.vercel.app` a `reverglim.com`.

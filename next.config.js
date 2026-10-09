@@ -4,6 +4,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'reverglim.vercel.app' }],
+        destination: 'https://reverglim.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/alternativa-tiktok',
         destination: '/que-es-reverglim',
         permanent: true,

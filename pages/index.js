@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import SEO from '../components/SEO';
 import { BRAND_LOGO_URL, SITE_NAME, SITE_URL } from '../lib/site';
 import SiteNav from '../components/SiteNav';
@@ -113,6 +114,7 @@ export default function Home() {
             </div>
           </div>
           <div className="quick-links">
+            <Link href="/que-es-reverglim">QUÉ ES REVERGLIM</Link>
             <a href="/term">TÉRMINOS Y CONDICIONES</a>
             <a href="/privacidad">POLÍTICA DE PRIVACIDAD</a>
             <a href="/seguridad-infantil">SEGURIDAD INFANTIL</a>
@@ -159,7 +161,11 @@ export default function Home() {
                 <span className="contacto__label">EMAIL</span>
                 <a href="mailto:soporte@reverglim.com">soporte@reverglim.com</a>
                 <span className="contacto__label">REVERGLIM</span>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/reverglim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   @reverglim
                 </a>
               </div>

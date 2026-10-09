@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { label: 'INICIO', id: 'inicio', href: '/' },
   { label: 'NOSOTROS', id: 'nosotros', href: '/nosotros' },
   { label: 'MISIÓN', id: 'mision', href: '/mision' },
+  { label: 'QUÉ ES', id: 'que-es-reverglim', href: '/que-es-reverglim' },
   { label: 'stickers', id: 'stickers', href: '/#stickers' },
   { label: 'INVERTIR', id: 'invertir', href: '/invertir' },
   { label: 'CONTACTO', id: 'contacto', href: '/#contacto' },
