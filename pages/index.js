@@ -114,7 +114,6 @@ export default function Home() {
             </div>
           </div>
           <div className="quick-links">
-            <Link href="/reverglim">QUÉ ES REVERGLIM</Link>
             <a href="/term">TÉRMINOS Y CONDICIONES</a>
             <a href="/privacidad">POLÍTICA DE PRIVACIDAD</a>
             <a href="/seguridad-infantil">SEGURIDAD INFANTIL</a>
