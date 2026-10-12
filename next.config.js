@@ -20,16 +20,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/alternativa-tiktok',
-        destination: '/reverglim',
-        permanent: true,
-      },
-      {
-        source: '/alternativa-instagram',
-        destination: '/reverglim',
-        permanent: true,
-      },
-      {
         source: '/red-social-segura-menores',
         destination: '/seguridad-infantil',
         permanent: true,
